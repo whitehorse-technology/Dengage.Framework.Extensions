@@ -1,0 +1,978 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		15EB0D0BA48F7A13B92DC9A51B360373 /* EventCollectionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F7CF20ECA46E51CEC0180C6730D920 /* EventCollectionService.swift */; };
+		21C2C8147E3069F75FBC35AEE7ABED71 /* EventCollectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0214F1F1BA121E14EEFF5672862813A5 /* EventCollectionModel.swift */; };
+		30830ED032329905BF3B299F845F04CA /* DengageLocalStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70514B1BF733EB1E680095348F055735 /* DengageLocalStorage.swift */; };
+		39C76E596857EEF311F5DE7275607C4C /* OpenEventService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00494960E17ABDB7185B0D0B27FA46FA /* OpenEventService.swift */; };
+		3E53DC295CCCC2C34FF9AC72853FD455 /* Dengage.Framework.Extensions-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 10B0BC39B40566BC63AB2F33E1BACB21 /* Dengage.Framework.Extensions-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		492A3F26B63B2332E90654FF919EE81E /* EventQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A114121555E107C922AFF570FEC65C5 /* EventQueue.swift */; };
+		50D9C330914D154112E16140EB83220D /* EventCollectionHttpRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F6765771B1D64E2A03F86541F4F19B /* EventCollectionHttpRequest.swift */; };
+		5A7CFBF2D9B5466CB5C18B07AFAB9C11 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710D6E74B56CB75FCAD9440F9A6E02C8 /* Settings.swift */; };
+		8183CB4B47C9997062A9145C5428705D /* DengageNotificationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260ED2A70DF203F94F63758F015F10B0 /* DengageNotificationDelegate.swift */; };
+		851EAD36FFA8F5E4A0888D401048F9F2 /* Dengage.Framework.Extensions-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 45861850CE51D07CF93A68541651163B /* Dengage.Framework.Extensions-dummy.m */; };
+		874CEF2EE6F93FA55E64EF94CA24D8FA /* Pods-Dengage.Framework.Extensions_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BC91658C7B0FFD2B3B0FAFB550F6067D /* Pods-Dengage.Framework.Extensions_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		88BAA14B9CB494F8FE456AF59CCF1E6E /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DDAA9549BAA0E8FE609F9C0C55719E9 /* Utilities.swift */; };
+		9C2CE872103749BB79D03831A46B54C8 /* Dengage.Framework-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B9C4734C2FD32B8AA114C2C97AE1D2F1 /* Dengage.Framework-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A4FA10C1E1DE151ACA6C66345827E783 /* OpenEventHttpRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A7BB1E77D852552EB32EE2545E5D43 /* OpenEventHttpRequest.swift */; };
+		A60C44C37A37C19371004151D5455445 /* BaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6C68A7930BD8D1D33D60143278B60D /* BaseService.swift */; };
+		AA5DB408241A6C7200B77C4B /* Dengage_Framework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EB5C18ADF03FF0AED8048B4E1FC4F83 /* Dengage_Framework.framework */; };
+		AA5DB409241A6C7200B77C4B /* Dengage_Framework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6EB5C18ADF03FF0AED8048B4E1FC4F83 /* Dengage_Framework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AA5DB40D241A6D0800B77C4B /* Dengage_Framework.framework in Resources */ = {isa = PBXBuildFile; fileRef = 6EB5C18ADF03FF0AED8048B4E1FC4F83 /* Dengage_Framework.framework */; };
+		AA5DB40E241A6D1B00B77C4B /* BaseService.swift in Resources */ = {isa = PBXBuildFile; fileRef = BF6C68A7930BD8D1D33D60143278B60D /* BaseService.swift */; };
+		AA5DB40F241A6D1B00B77C4B /* Constants.swift in Resources */ = {isa = PBXBuildFile; fileRef = 0AE2DD18FA61651D6D33AF8AE5517E12 /* Constants.swift */; };
+		AA5DB410241A6D1B00B77C4B /* DefaultCategory.swift in Resources */ = {isa = PBXBuildFile; fileRef = 5855CFFCB863E185CE926652FD04B73C /* DefaultCategory.swift */; };
+		AA5DB411241A6D1B00B77C4B /* Dengage.swift in Resources */ = {isa = PBXBuildFile; fileRef = 02E616C99B3E0A9DD874C250850E4D4A /* Dengage.swift */; };
+		AA5DB412241A6D1B00B77C4B /* DengageCategories.swift in Resources */ = {isa = PBXBuildFile; fileRef = EB75465CC14A6422313ADDED7A889A06 /* DengageCategories.swift */; };
+		AA5DB413241A6D1B00B77C4B /* DengageLocalStorage.swift in Resources */ = {isa = PBXBuildFile; fileRef = 70514B1BF733EB1E680095348F055735 /* DengageLocalStorage.swift */; };
+		AA5DB414241A6D1B00B77C4B /* DengageNotificationDelegate.swift in Resources */ = {isa = PBXBuildFile; fileRef = 260ED2A70DF203F94F63758F015F10B0 /* DengageNotificationDelegate.swift */; };
+		AA5DB415241A6D1B00B77C4B /* DengageNotificationExtension.swift in Resources */ = {isa = PBXBuildFile; fileRef = 1B99D96727F6CF0E74E07F918080720C /* DengageNotificationExtension.swift */; };
+		AA5DB416241A6D1B00B77C4B /* EventCollectionHttpRequest.swift in Resources */ = {isa = PBXBuildFile; fileRef = 46F6765771B1D64E2A03F86541F4F19B /* EventCollectionHttpRequest.swift */; };
+		AA5DB417241A6D1B00B77C4B /* EventCollectionModel.swift in Resources */ = {isa = PBXBuildFile; fileRef = 0214F1F1BA121E14EEFF5672862813A5 /* EventCollectionModel.swift */; };
+		AA5DB418241A6D1B00B77C4B /* EventCollectionService.swift in Resources */ = {isa = PBXBuildFile; fileRef = 99F7CF20ECA46E51CEC0180C6730D920 /* EventCollectionService.swift */; };
+		AA5DB419241A6D1B00B77C4B /* EventQueue.swift in Resources */ = {isa = PBXBuildFile; fileRef = 3A114121555E107C922AFF570FEC65C5 /* EventQueue.swift */; };
+		AA5DB41A241A6D1B00B77C4B /* OpenEventHttpRequest.swift in Resources */ = {isa = PBXBuildFile; fileRef = E9A7BB1E77D852552EB32EE2545E5D43 /* OpenEventHttpRequest.swift */; };
+		AA5DB41B241A6D1B00B77C4B /* OpenEventService.swift in Resources */ = {isa = PBXBuildFile; fileRef = 00494960E17ABDB7185B0D0B27FA46FA /* OpenEventService.swift */; };
+		AA5DB41C241A6D1B00B77C4B /* SDKLogger.swift in Resources */ = {isa = PBXBuildFile; fileRef = D610ED853BD3DB68901C133B5B6329FC /* SDKLogger.swift */; };
+		AA5DB41D241A6D1B00B77C4B /* Settings.swift in Resources */ = {isa = PBXBuildFile; fileRef = 710D6E74B56CB75FCAD9440F9A6E02C8 /* Settings.swift */; };
+		AA5DB41E241A6D1B00B77C4B /* SubscriptionHttpRequest.swift in Resources */ = {isa = PBXBuildFile; fileRef = FAEBFDD08CE3C7FA059AD82ED40DC612 /* SubscriptionHttpRequest.swift */; };
+		AA5DB41F241A6D1B00B77C4B /* SubscriptionService.swift in Resources */ = {isa = PBXBuildFile; fileRef = 6B96584C0B3A9BB875A53AA092CB4D1A /* SubscriptionService.swift */; };
+		AA5DB420241A6D1B00B77C4B /* TransactionalOpenEventHttpRequest.swift in Resources */ = {isa = PBXBuildFile; fileRef = 60758F04A901FEB70F28F51D94840B45 /* TransactionalOpenEventHttpRequest.swift */; };
+		AA5DB421241A6D1B00B77C4B /* TransactionalOpenEventSevice.swift in Resources */ = {isa = PBXBuildFile; fileRef = 311B2F55FA7AB8BE60211C6AD96B1AA3 /* TransactionalOpenEventSevice.swift */; };
+		AA5DB422241A6D1B00B77C4B /* UABuilder.swift in Resources */ = {isa = PBXBuildFile; fileRef = 9E1DA4E32C44373ADEC7C9A748B8C91D /* UABuilder.swift */; };
+		AA5DB423241A6D1B00B77C4B /* Utilities.swift in Resources */ = {isa = PBXBuildFile; fileRef = 7DDAA9549BAA0E8FE609F9C0C55719E9 /* Utilities.swift */; };
+		AA5DB425241A6E0600B77C4B /* DengageNotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5DB424241A6E0600B77C4B /* DengageNotificationViewController.swift */; };
+		AA5DB427241A6E4B00B77C4B /* CarouselNotificationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA5DB426241A6E4B00B77C4B /* CarouselNotificationCell.xib */; };
+		AA5DB429241A6E6E00B77C4B /* CarouselNotificationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5DB428241A6E6E00B77C4B /* CarouselNotificationCell.swift */; };
+		AA5DB42C241A6F0100B77C4B /* DengageRecievedMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5DB42B241A6F0100B77C4B /* DengageRecievedMessage.swift */; };
+		AB3DDDF3E3491896462CB06A0372D48F /* TransactionalOpenEventSevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311B2F55FA7AB8BE60211C6AD96B1AA3 /* TransactionalOpenEventSevice.swift */; };
+		AD51CBEBED69F45DAF80CE3FF2A0A948 /* Dengage.Framework-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B09A665D62F2F72E02D31A7BB7D8362 /* Dengage.Framework-dummy.m */; };
+		B23825817536819F76A0DF82973E434A /* DengageNotificationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B99D96727F6CF0E74E07F918080720C /* DengageNotificationExtension.swift */; };
+		B703048D236C48A0229D565511581350 /* TransactionalOpenEventHttpRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60758F04A901FEB70F28F51D94840B45 /* TransactionalOpenEventHttpRequest.swift */; };
+		BF52EBDE496C4ED69C5C42C6035E39F3 /* SubscriptionHttpRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEBFDD08CE3C7FA059AD82ED40DC612 /* SubscriptionHttpRequest.swift */; };
+		C40882F466EBD207EBB91634088A9625 /* DefaultCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5855CFFCB863E185CE926652FD04B73C /* DefaultCategory.swift */; };
+		C5F827EE6091AE7307B448E15764E473 /* UABuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1DA4E32C44373ADEC7C9A748B8C91D /* UABuilder.swift */; };
+		D453E2FD4EE32C41E5E256016B5CCE63 /* Dengage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E616C99B3E0A9DD874C250850E4D4A /* Dengage.swift */; };
+		D92DAA3170AFB7EE63031843F18BD7CD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		E00C4B03327DBA9C3C44DD917BCF3509 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		E33195BA6724BA81D294A8F773825535 /* SubscriptionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B96584C0B3A9BB875A53AA092CB4D1A /* SubscriptionService.swift */; };
+		EAB9F2B8E6ADCDC13F0ADAF9B719C8CB /* DengageCategories.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB75465CC14A6422313ADDED7A889A06 /* DengageCategories.swift */; };
+		EBF31E77246DB8892A21C0456980F19F /* Pods-Dengage.Framework.Extensions_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F05C05C969DA6A75EF5353A196D1EC70 /* Pods-Dengage.Framework.Extensions_Tests-dummy.m */; };
+		F70E392A3A45C763A088A8003265A05E /* SDKLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = D610ED853BD3DB68901C133B5B6329FC /* SDKLogger.swift */; };
+		FAB4A7FFDC6B10956C267F389D8CA4DF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		FCE48FC9C19123432CE36E682F8A4438 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE2DD18FA61651D6D33AF8AE5517E12 /* Constants.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4E3C8296F6202911C3544322C1D5D9E0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1EF4D283ED8C700889643D24AD392477;
+			remoteInfo = Dengage.Framework;
+		};
+		9788CB482EE883EA35D8850433DCF94E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F3D049178E9F3EB6FC23BB0522655118;
+			remoteInfo = Dengage.Framework.Extensions;
+		};
+		AA5DB40A241A6C7200B77C4B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1EF4D283ED8C700889643D24AD392477;
+			remoteInfo = Dengage.Framework;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		AA5DB40C241A6C7300B77C4B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				AA5DB409241A6C7200B77C4B /* Dengage_Framework.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		00494960E17ABDB7185B0D0B27FA46FA /* OpenEventService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OpenEventService.swift; path = Dengage.Framework/Services/OpenEventService.swift; sourceTree = "<group>"; };
+		0214F1F1BA121E14EEFF5672862813A5 /* EventCollectionModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EventCollectionModel.swift; path = Dengage.Framework/Models/EventCollectionModel.swift; sourceTree = "<group>"; };
+		02E616C99B3E0A9DD874C250850E4D4A /* Dengage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Dengage.swift; path = Dengage.Framework/Classes/Dengage.swift; sourceTree = "<group>"; };
+		0782F36487C9E4055558BB67B85C1F2D /* Dengage.Framework.Extensions-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Dengage.Framework.Extensions-prefix.pch"; sourceTree = "<group>"; };
+		0AE2DD18FA61651D6D33AF8AE5517E12 /* Constants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = Dengage.Framework/Classes/Constants.swift; sourceTree = "<group>"; };
+		10B0BC39B40566BC63AB2F33E1BACB21 /* Dengage.Framework.Extensions-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Dengage.Framework.Extensions-umbrella.h"; sourceTree = "<group>"; };
+		1B99D96727F6CF0E74E07F918080720C /* DengageNotificationExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DengageNotificationExtension.swift; path = Dengage.Framework/Classes/DengageNotificationExtension.swift; sourceTree = "<group>"; };
+		260ED2A70DF203F94F63758F015F10B0 /* DengageNotificationDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DengageNotificationDelegate.swift; path = Dengage.Framework/Classes/DengageNotificationDelegate.swift; sourceTree = "<group>"; };
+		2FD5E6BDDC959EA706A74D463D1E464A /* Dengage.Framework.Extensions.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Dengage.Framework.Extensions.xcconfig; sourceTree = "<group>"; };
+		2FF5A75F985436E12ECA1373422687A2 /* Pods-Dengage.Framework.Extensions_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Dengage.Framework.Extensions_Tests.modulemap"; sourceTree = "<group>"; };
+		311B2F55FA7AB8BE60211C6AD96B1AA3 /* TransactionalOpenEventSevice.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransactionalOpenEventSevice.swift; path = Dengage.Framework/Services/TransactionalOpenEventSevice.swift; sourceTree = "<group>"; };
+		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		3A114121555E107C922AFF570FEC65C5 /* EventQueue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EventQueue.swift; path = Dengage.Framework/DataStructures/EventQueue.swift; sourceTree = "<group>"; };
+		45861850CE51D07CF93A68541651163B /* Dengage.Framework.Extensions-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Dengage.Framework.Extensions-dummy.m"; sourceTree = "<group>"; };
+		46F6765771B1D64E2A03F86541F4F19B /* EventCollectionHttpRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EventCollectionHttpRequest.swift; path = Dengage.Framework/Models/EventCollectionHttpRequest.swift; sourceTree = "<group>"; };
+		4B09A665D62F2F72E02D31A7BB7D8362 /* Dengage.Framework-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Dengage.Framework-dummy.m"; sourceTree = "<group>"; };
+		5855CFFCB863E185CE926652FD04B73C /* DefaultCategory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DefaultCategory.swift; path = Dengage.Framework/Models/DefaultCategory.swift; sourceTree = "<group>"; };
+		5B60B831A2E01E7F18A67AEF15A3F60F /* Dengage.Framework-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Dengage.Framework-prefix.pch"; sourceTree = "<group>"; };
+		5F2AAA5E0744529D44AD0979625AF908 /* Pods_Dengage_Framework_Extensions_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Dengage_Framework_Extensions_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F315ACF485DCDA69F072FB36CEDB5ED /* Pods-Dengage.Framework.Extensions_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Dengage.Framework.Extensions_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		60758F04A901FEB70F28F51D94840B45 /* TransactionalOpenEventHttpRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransactionalOpenEventHttpRequest.swift; path = Dengage.Framework/Models/TransactionalOpenEventHttpRequest.swift; sourceTree = "<group>"; };
+		6B96584C0B3A9BB875A53AA092CB4D1A /* SubscriptionService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SubscriptionService.swift; path = Dengage.Framework/Services/SubscriptionService.swift; sourceTree = "<group>"; };
+		6EB5C18ADF03FF0AED8048B4E1FC4F83 /* Dengage_Framework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Dengage_Framework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		70514B1BF733EB1E680095348F055735 /* DengageLocalStorage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DengageLocalStorage.swift; path = Dengage.Framework/Classes/DengageLocalStorage.swift; sourceTree = "<group>"; };
+		710D6E74B56CB75FCAD9440F9A6E02C8 /* Settings.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Settings.swift; path = Dengage.Framework/Classes/Settings.swift; sourceTree = "<group>"; };
+		7DDAA9549BAA0E8FE609F9C0C55719E9 /* Utilities.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Utilities.swift; path = Dengage.Framework/Classes/Utilities.swift; sourceTree = "<group>"; };
+		8C80FEA6966C9DB903137180B07B30E3 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		8E1408501DC8F6518ECEB9A3F532A5A6 /* Dengage.Framework-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Dengage.Framework-Info.plist"; sourceTree = "<group>"; };
+		99F7CF20ECA46E51CEC0180C6730D920 /* EventCollectionService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EventCollectionService.swift; path = Dengage.Framework/Services/EventCollectionService.swift; sourceTree = "<group>"; };
+		9BAFA5D03248FCA9FFF7794E924F69FB /* Dengage.Framework.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Dengage.Framework.xcconfig; sourceTree = "<group>"; };
+		9C79E47B75AD88AB2B1FB899EB642EB6 /* Pods-Dengage.Framework.Extensions_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Dengage.Framework.Extensions_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9E1DA4E32C44373ADEC7C9A748B8C91D /* UABuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UABuilder.swift; path = Dengage.Framework/Classes/UABuilder.swift; sourceTree = "<group>"; };
+		A1C5B6731A72B98558E65E791442E854 /* Pods-Dengage.Framework.Extensions_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Dengage.Framework.Extensions_Tests-Info.plist"; sourceTree = "<group>"; };
+		A6E3239586FB158ABFB656AFC09AB59C /* Dengage.Framework.Extensions.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = Dengage.Framework.Extensions.podspec; sourceTree = "<group>"; tabWidth = 2; };
+		A74D09D21AAED83BAA21ED05F07803A0 /* Pods-Dengage.Framework.Extensions_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Dengage.Framework.Extensions_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		A85ACE72FEC14C326B3D8002ADF60D19 /* Dengage.Framework.Extensions-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Dengage.Framework.Extensions-Info.plist"; sourceTree = "<group>"; };
+		AA5DB424241A6E0600B77C4B /* DengageNotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DengageNotificationViewController.swift; path = Dengage.Framework.Extensions/Classes/DengageNotificationViewController.swift; sourceTree = "<group>"; };
+		AA5DB426241A6E4B00B77C4B /* CarouselNotificationCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = CarouselNotificationCell.xib; path = Dengage.Framework.Extensions/Views/CarouselNotificationCell.xib; sourceTree = "<group>"; };
+		AA5DB428241A6E6E00B77C4B /* CarouselNotificationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CarouselNotificationCell.swift; path = Dengage.Framework.Extensions/Classes/CarouselNotificationCell.swift; sourceTree = "<group>"; };
+		AA5DB42B241A6F0100B77C4B /* DengageRecievedMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DengageRecievedMessage.swift; path = Dengage.Framework.Extensions/Classes/Models/DengageRecievedMessage.swift; sourceTree = "<group>"; };
+		AEED591C88505AB58D16BDF5672E09A0 /* Dengage.Framework.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Dengage.Framework.modulemap; sourceTree = "<group>"; };
+		B093F3C25DFC45F28291C51CD1638C36 /* Dengage.Framework.Extensions.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Dengage.Framework.Extensions.modulemap; sourceTree = "<group>"; };
+		B9C4734C2FD32B8AA114C2C97AE1D2F1 /* Dengage.Framework-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Dengage.Framework-umbrella.h"; sourceTree = "<group>"; };
+		BC91658C7B0FFD2B3B0FAFB550F6067D /* Pods-Dengage.Framework.Extensions_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Dengage.Framework.Extensions_Tests-umbrella.h"; sourceTree = "<group>"; };
+		BF62C7D8650B91E0096AD2D3CFE786C9 /* Dengage_Framework_Extensions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Dengage_Framework_Extensions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF6C68A7930BD8D1D33D60143278B60D /* BaseService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BaseService.swift; path = Dengage.Framework/Services/BaseService.swift; sourceTree = "<group>"; };
+		C3511CEA6262E029B49578EF2FDD4152 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		CFA8560775AB16915181FB1E6CDED7F2 /* Pods-Dengage.Framework.Extensions_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Dengage.Framework.Extensions_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		D610ED853BD3DB68901C133B5B6329FC /* SDKLogger.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SDKLogger.swift; path = Dengage.Framework/Classes/SDKLogger.swift; sourceTree = "<group>"; };
+		E7CFCACB11BC5AF8BC36EAB388C02D32 /* Pods-Dengage.Framework.Extensions_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Dengage.Framework.Extensions_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		E9A7BB1E77D852552EB32EE2545E5D43 /* OpenEventHttpRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OpenEventHttpRequest.swift; path = Dengage.Framework/Models/OpenEventHttpRequest.swift; sourceTree = "<group>"; };
+		EB75465CC14A6422313ADDED7A889A06 /* DengageCategories.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DengageCategories.swift; path = Dengage.Framework/Classes/DengageCategories.swift; sourceTree = "<group>"; };
+		F05C05C969DA6A75EF5353A196D1EC70 /* Pods-Dengage.Framework.Extensions_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Dengage.Framework.Extensions_Tests-dummy.m"; sourceTree = "<group>"; };
+		FAEBFDD08CE3C7FA059AD82ED40DC612 /* SubscriptionHttpRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SubscriptionHttpRequest.swift; path = Dengage.Framework/Models/SubscriptionHttpRequest.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0A91A8A141B2A512427003A7584446EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D92DAA3170AFB7EE63031843F18BD7CD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30350BAD135EF94214C2503A730D7C97 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAB4A7FFDC6B10956C267F389D8CA4DF /* Foundation.framework in Frameworks */,
+				AA5DB408241A6C7200B77C4B /* Dengage_Framework.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3EAF089EA2EDBD7ED2CEF8C1BFB2223D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E00C4B03327DBA9C3C44DD917BCF3509 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		016590450FE097E04DEBA6F375FFFE3D /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B093F3C25DFC45F28291C51CD1638C36 /* Dengage.Framework.Extensions.modulemap */,
+				2FD5E6BDDC959EA706A74D463D1E464A /* Dengage.Framework.Extensions.xcconfig */,
+				45861850CE51D07CF93A68541651163B /* Dengage.Framework.Extensions-dummy.m */,
+				A85ACE72FEC14C326B3D8002ADF60D19 /* Dengage.Framework.Extensions-Info.plist */,
+				0782F36487C9E4055558BB67B85C1F2D /* Dengage.Framework.Extensions-prefix.pch */,
+				10B0BC39B40566BC63AB2F33E1BACB21 /* Dengage.Framework.Extensions-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/Dengage.Framework.Extensions";
+			sourceTree = "<group>";
+		};
+		1ED7A2AC0D23FCB8C3249C213518CD62 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6EB5C18ADF03FF0AED8048B4E1FC4F83 /* Dengage_Framework.framework */,
+				BF62C7D8650B91E0096AD2D3CFE786C9 /* Dengage_Framework_Extensions.framework */,
+				5F2AAA5E0744529D44AD0979625AF908 /* Pods_Dengage_Framework_Extensions_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		61EC7C59C8B9FCEF6EDB557495515281 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9534BCB39CF2994D6562B928FF5B406D /* Dengage.Framework */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8A1E90D873A62DDABC52B41C3490AD05 /* Pods-Dengage.Framework.Extensions_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				2FF5A75F985436E12ECA1373422687A2 /* Pods-Dengage.Framework.Extensions_Tests.modulemap */,
+				9C79E47B75AD88AB2B1FB899EB642EB6 /* Pods-Dengage.Framework.Extensions_Tests-acknowledgements.markdown */,
+				E7CFCACB11BC5AF8BC36EAB388C02D32 /* Pods-Dengage.Framework.Extensions_Tests-acknowledgements.plist */,
+				F05C05C969DA6A75EF5353A196D1EC70 /* Pods-Dengage.Framework.Extensions_Tests-dummy.m */,
+				CFA8560775AB16915181FB1E6CDED7F2 /* Pods-Dengage.Framework.Extensions_Tests-frameworks.sh */,
+				A1C5B6731A72B98558E65E791442E854 /* Pods-Dengage.Framework.Extensions_Tests-Info.plist */,
+				BC91658C7B0FFD2B3B0FAFB550F6067D /* Pods-Dengage.Framework.Extensions_Tests-umbrella.h */,
+				5F315ACF485DCDA69F072FB36CEDB5ED /* Pods-Dengage.Framework.Extensions_Tests.debug.xcconfig */,
+				A74D09D21AAED83BAA21ED05F07803A0 /* Pods-Dengage.Framework.Extensions_Tests.release.xcconfig */,
+			);
+			name = "Pods-Dengage.Framework.Extensions_Tests";
+			path = "Target Support Files/Pods-Dengage.Framework.Extensions_Tests";
+			sourceTree = "<group>";
+		};
+		9534BCB39CF2994D6562B928FF5B406D /* Dengage.Framework */ = {
+			isa = PBXGroup;
+			children = (
+				BF6C68A7930BD8D1D33D60143278B60D /* BaseService.swift */,
+				0AE2DD18FA61651D6D33AF8AE5517E12 /* Constants.swift */,
+				5855CFFCB863E185CE926652FD04B73C /* DefaultCategory.swift */,
+				02E616C99B3E0A9DD874C250850E4D4A /* Dengage.swift */,
+				EB75465CC14A6422313ADDED7A889A06 /* DengageCategories.swift */,
+				70514B1BF733EB1E680095348F055735 /* DengageLocalStorage.swift */,
+				260ED2A70DF203F94F63758F015F10B0 /* DengageNotificationDelegate.swift */,
+				1B99D96727F6CF0E74E07F918080720C /* DengageNotificationExtension.swift */,
+				46F6765771B1D64E2A03F86541F4F19B /* EventCollectionHttpRequest.swift */,
+				0214F1F1BA121E14EEFF5672862813A5 /* EventCollectionModel.swift */,
+				99F7CF20ECA46E51CEC0180C6730D920 /* EventCollectionService.swift */,
+				3A114121555E107C922AFF570FEC65C5 /* EventQueue.swift */,
+				E9A7BB1E77D852552EB32EE2545E5D43 /* OpenEventHttpRequest.swift */,
+				00494960E17ABDB7185B0D0B27FA46FA /* OpenEventService.swift */,
+				D610ED853BD3DB68901C133B5B6329FC /* SDKLogger.swift */,
+				710D6E74B56CB75FCAD9440F9A6E02C8 /* Settings.swift */,
+				FAEBFDD08CE3C7FA059AD82ED40DC612 /* SubscriptionHttpRequest.swift */,
+				6B96584C0B3A9BB875A53AA092CB4D1A /* SubscriptionService.swift */,
+				60758F04A901FEB70F28F51D94840B45 /* TransactionalOpenEventHttpRequest.swift */,
+				311B2F55FA7AB8BE60211C6AD96B1AA3 /* TransactionalOpenEventSevice.swift */,
+				9E1DA4E32C44373ADEC7C9A748B8C91D /* UABuilder.swift */,
+				7DDAA9549BAA0E8FE609F9C0C55719E9 /* Utilities.swift */,
+				CCC5411CDA075DDE5A9FCAE0E16A439D /* Support Files */,
+			);
+			path = Dengage.Framework;
+			sourceTree = "<group>";
+		};
+		A892E7CDBA5D4A5CFF5EBC4BE04559BC /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				A6E3239586FB158ABFB656AFC09AB59C /* Dengage.Framework.Extensions.podspec */,
+				C3511CEA6262E029B49578EF2FDD4152 /* LICENSE */,
+				8C80FEA6966C9DB903137180B07B30E3 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		AA5DB42A241A6ECE00B77C4B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AA5DB42B241A6F0100B77C4B /* DengageRecievedMessage.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		C4472732CD89E3EE261D8DF5DFA48BBA /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EC10F088C4AF79F29E31BA465943ED2E /* Dengage.Framework.Extensions */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		CCC5411CDA075DDE5A9FCAE0E16A439D /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				AEED591C88505AB58D16BDF5672E09A0 /* Dengage.Framework.modulemap */,
+				9BAFA5D03248FCA9FFF7794E924F69FB /* Dengage.Framework.xcconfig */,
+				4B09A665D62F2F72E02D31A7BB7D8362 /* Dengage.Framework-dummy.m */,
+				8E1408501DC8F6518ECEB9A3F532A5A6 /* Dengage.Framework-Info.plist */,
+				5B60B831A2E01E7F18A67AEF15A3F60F /* Dengage.Framework-prefix.pch */,
+				B9C4734C2FD32B8AA114C2C97AE1D2F1 /* Dengage.Framework-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Dengage.Framework";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				C4472732CD89E3EE261D8DF5DFA48BBA /* Development Pods */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				61EC7C59C8B9FCEF6EDB557495515281 /* Pods */,
+				1ED7A2AC0D23FCB8C3249C213518CD62 /* Products */,
+				FC7D807DF9674DEE06D059C8942CFF56 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EC10F088C4AF79F29E31BA465943ED2E /* Dengage.Framework.Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				AA5DB42A241A6ECE00B77C4B /* Models */,
+				A892E7CDBA5D4A5CFF5EBC4BE04559BC /* Pod */,
+				016590450FE097E04DEBA6F375FFFE3D /* Support Files */,
+				AA5DB424241A6E0600B77C4B /* DengageNotificationViewController.swift */,
+				AA5DB426241A6E4B00B77C4B /* CarouselNotificationCell.xib */,
+				AA5DB428241A6E6E00B77C4B /* CarouselNotificationCell.swift */,
+			);
+			name = Dengage.Framework.Extensions;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		FC7D807DF9674DEE06D059C8942CFF56 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				8A1E90D873A62DDABC52B41C3490AD05 /* Pods-Dengage.Framework.Extensions_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		76B319B71474D9DEEEECD8AA1956A829 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C2CE872103749BB79D03831A46B54C8 /* Dengage.Framework-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A349234A2A9BFC3430B99AD3AB8808D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E53DC295CCCC2C34FF9AC72853FD455 /* Dengage.Framework.Extensions-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6BFA3C34ECD352889CB3B36E60B136D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				874CEF2EE6F93FA55E64EF94CA24D8FA /* Pods-Dengage.Framework.Extensions_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		1EF4D283ED8C700889643D24AD392477 /* Dengage.Framework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7F1FD67B1A4AD3150ECA1EA8DA69F75A /* Build configuration list for PBXNativeTarget "Dengage.Framework" */;
+			buildPhases = (
+				76B319B71474D9DEEEECD8AA1956A829 /* Headers */,
+				B15AFB4E6990843B967F11F11A9CCEE0 /* Sources */,
+				0A91A8A141B2A512427003A7584446EF /* Frameworks */,
+				20552D7D3AAEB450B02D2B2C6AAFB8AF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Dengage.Framework;
+			productName = Dengage.Framework;
+			productReference = 6EB5C18ADF03FF0AED8048B4E1FC4F83 /* Dengage_Framework.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		628AD0DF2395620FD4BAE937F3B8F587 /* Pods-Dengage.Framework.Extensions_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0AA44B79CB2360EF510D15A8265CAAEF /* Build configuration list for PBXNativeTarget "Pods-Dengage.Framework.Extensions_Tests" */;
+			buildPhases = (
+				E6BFA3C34ECD352889CB3B36E60B136D /* Headers */,
+				02CF59A86198D67547D964B94ED9764E /* Sources */,
+				3EAF089EA2EDBD7ED2CEF8C1BFB2223D /* Frameworks */,
+				C9E4A85FC1416412267674BDBE13D8F4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BD0DB9810DFD2C8E3F9B96F924EA291C /* PBXTargetDependency */,
+				B5B5D7E9E9241A5B561F0F4D28E09BAE /* PBXTargetDependency */,
+			);
+			name = "Pods-Dengage.Framework.Extensions_Tests";
+			productName = "Pods-Dengage.Framework.Extensions_Tests";
+			productReference = 5F2AAA5E0744529D44AD0979625AF908 /* Pods_Dengage_Framework_Extensions_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F3D049178E9F3EB6FC23BB0522655118 /* Dengage.Framework.Extensions */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8FD276AFD39D9E620389152C5A4F8A11 /* Build configuration list for PBXNativeTarget "Dengage.Framework.Extensions" */;
+			buildPhases = (
+				8A349234A2A9BFC3430B99AD3AB8808D /* Headers */,
+				5A48D933DDF6D48BBD6710329D3C7A5D /* Sources */,
+				30350BAD135EF94214C2503A730D7C97 /* Frameworks */,
+				35DDC085E6E5A31502CCE82855A5528B /* Resources */,
+				AA5DB40C241A6C7300B77C4B /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AA5DB40B241A6C7200B77C4B /* PBXTargetDependency */,
+			);
+			name = Dengage.Framework.Extensions;
+			productName = Dengage.Framework.Extensions;
+			productReference = BF62C7D8650B91E0096AD2D3CFE786C9 /* Dengage_Framework_Extensions.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 1ED7A2AC0D23FCB8C3249C213518CD62 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1EF4D283ED8C700889643D24AD392477 /* Dengage.Framework */,
+				F3D049178E9F3EB6FC23BB0522655118 /* Dengage.Framework.Extensions */,
+				628AD0DF2395620FD4BAE937F3B8F587 /* Pods-Dengage.Framework.Extensions_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		20552D7D3AAEB450B02D2B2C6AAFB8AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		35DDC085E6E5A31502CCE82855A5528B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA5DB40E241A6D1B00B77C4B /* BaseService.swift in Resources */,
+				AA5DB40F241A6D1B00B77C4B /* Constants.swift in Resources */,
+				AA5DB410241A6D1B00B77C4B /* DefaultCategory.swift in Resources */,
+				AA5DB411241A6D1B00B77C4B /* Dengage.swift in Resources */,
+				AA5DB412241A6D1B00B77C4B /* DengageCategories.swift in Resources */,
+				AA5DB413241A6D1B00B77C4B /* DengageLocalStorage.swift in Resources */,
+				AA5DB414241A6D1B00B77C4B /* DengageNotificationDelegate.swift in Resources */,
+				AA5DB415241A6D1B00B77C4B /* DengageNotificationExtension.swift in Resources */,
+				AA5DB416241A6D1B00B77C4B /* EventCollectionHttpRequest.swift in Resources */,
+				AA5DB417241A6D1B00B77C4B /* EventCollectionModel.swift in Resources */,
+				AA5DB427241A6E4B00B77C4B /* CarouselNotificationCell.xib in Resources */,
+				AA5DB418241A6D1B00B77C4B /* EventCollectionService.swift in Resources */,
+				AA5DB419241A6D1B00B77C4B /* EventQueue.swift in Resources */,
+				AA5DB41A241A6D1B00B77C4B /* OpenEventHttpRequest.swift in Resources */,
+				AA5DB41B241A6D1B00B77C4B /* OpenEventService.swift in Resources */,
+				AA5DB41C241A6D1B00B77C4B /* SDKLogger.swift in Resources */,
+				AA5DB41D241A6D1B00B77C4B /* Settings.swift in Resources */,
+				AA5DB41E241A6D1B00B77C4B /* SubscriptionHttpRequest.swift in Resources */,
+				AA5DB41F241A6D1B00B77C4B /* SubscriptionService.swift in Resources */,
+				AA5DB420241A6D1B00B77C4B /* TransactionalOpenEventHttpRequest.swift in Resources */,
+				AA5DB421241A6D1B00B77C4B /* TransactionalOpenEventSevice.swift in Resources */,
+				AA5DB422241A6D1B00B77C4B /* UABuilder.swift in Resources */,
+				AA5DB423241A6D1B00B77C4B /* Utilities.swift in Resources */,
+				AA5DB40D241A6D0800B77C4B /* Dengage_Framework.framework in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9E4A85FC1416412267674BDBE13D8F4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		02CF59A86198D67547D964B94ED9764E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBF31E77246DB8892A21C0456980F19F /* Pods-Dengage.Framework.Extensions_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A48D933DDF6D48BBD6710329D3C7A5D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA5DB429241A6E6E00B77C4B /* CarouselNotificationCell.swift in Sources */,
+				851EAD36FFA8F5E4A0888D401048F9F2 /* Dengage.Framework.Extensions-dummy.m in Sources */,
+				AA5DB42C241A6F0100B77C4B /* DengageRecievedMessage.swift in Sources */,
+				AA5DB425241A6E0600B77C4B /* DengageNotificationViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B15AFB4E6990843B967F11F11A9CCEE0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A60C44C37A37C19371004151D5455445 /* BaseService.swift in Sources */,
+				FCE48FC9C19123432CE36E682F8A4438 /* Constants.swift in Sources */,
+				C40882F466EBD207EBB91634088A9625 /* DefaultCategory.swift in Sources */,
+				AD51CBEBED69F45DAF80CE3FF2A0A948 /* Dengage.Framework-dummy.m in Sources */,
+				D453E2FD4EE32C41E5E256016B5CCE63 /* Dengage.swift in Sources */,
+				EAB9F2B8E6ADCDC13F0ADAF9B719C8CB /* DengageCategories.swift in Sources */,
+				30830ED032329905BF3B299F845F04CA /* DengageLocalStorage.swift in Sources */,
+				8183CB4B47C9997062A9145C5428705D /* DengageNotificationDelegate.swift in Sources */,
+				B23825817536819F76A0DF82973E434A /* DengageNotificationExtension.swift in Sources */,
+				50D9C330914D154112E16140EB83220D /* EventCollectionHttpRequest.swift in Sources */,
+				21C2C8147E3069F75FBC35AEE7ABED71 /* EventCollectionModel.swift in Sources */,
+				15EB0D0BA48F7A13B92DC9A51B360373 /* EventCollectionService.swift in Sources */,
+				492A3F26B63B2332E90654FF919EE81E /* EventQueue.swift in Sources */,
+				A4FA10C1E1DE151ACA6C66345827E783 /* OpenEventHttpRequest.swift in Sources */,
+				39C76E596857EEF311F5DE7275607C4C /* OpenEventService.swift in Sources */,
+				F70E392A3A45C763A088A8003265A05E /* SDKLogger.swift in Sources */,
+				5A7CFBF2D9B5466CB5C18B07AFAB9C11 /* Settings.swift in Sources */,
+				BF52EBDE496C4ED69C5C42C6035E39F3 /* SubscriptionHttpRequest.swift in Sources */,
+				E33195BA6724BA81D294A8F773825535 /* SubscriptionService.swift in Sources */,
+				B703048D236C48A0229D565511581350 /* TransactionalOpenEventHttpRequest.swift in Sources */,
+				AB3DDDF3E3491896462CB06A0372D48F /* TransactionalOpenEventSevice.swift in Sources */,
+				C5F827EE6091AE7307B448E15764E473 /* UABuilder.swift in Sources */,
+				88BAA14B9CB494F8FE456AF59CCF1E6E /* Utilities.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AA5DB40B241A6C7200B77C4B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1EF4D283ED8C700889643D24AD392477 /* Dengage.Framework */;
+			targetProxy = AA5DB40A241A6C7200B77C4B /* PBXContainerItemProxy */;
+		};
+		B5B5D7E9E9241A5B561F0F4D28E09BAE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Dengage.Framework.Extensions;
+			target = F3D049178E9F3EB6FC23BB0522655118 /* Dengage.Framework.Extensions */;
+			targetProxy = 9788CB482EE883EA35D8850433DCF94E /* PBXContainerItemProxy */;
+		};
+		BD0DB9810DFD2C8E3F9B96F924EA291C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Dengage.Framework;
+			target = 1EF4D283ED8C700889643D24AD392477 /* Dengage.Framework */;
+			targetProxy = 4E3C8296F6202911C3544322C1D5D9E0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		257497152829C177993B5EC99C1D227A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		4E30767D13BF3608DF49D859A48AC1C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F315ACF485DCDA69F072FB36CEDB5ED /* Pods-Dengage.Framework.Extensions_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Dengage.Framework.Extensions_Tests/Pods-Dengage.Framework.Extensions_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Dengage.Framework.Extensions_Tests/Pods-Dengage.Framework.Extensions_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5C0105CFC3FCC358E0B9A5B5B9966A58 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2FD5E6BDDC959EA706A74D463D1E464A /* Dengage.Framework.Extensions.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_ASSET_PATHS = Dengage.Framework;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Dengage.Framework.Extensions/Dengage.Framework.Extensions-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Dengage.Framework.Extensions/Dengage.Framework.Extensions-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Dengage.Framework.Extensions/Dengage.Framework.Extensions.modulemap";
+				PRODUCT_MODULE_NAME = Dengage_Framework_Extensions;
+				PRODUCT_NAME = Dengage_Framework_Extensions;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		AD7429BF812898BE5900190D5F7E4F12 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9BAFA5D03248FCA9FFF7794E924F69FB /* Dengage.Framework.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = NO;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Dengage.Framework/Dengage.Framework-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Dengage.Framework/Dengage.Framework-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Dengage.Framework/Dengage.Framework.modulemap";
+				PRODUCT_MODULE_NAME = Dengage_Framework;
+				PRODUCT_NAME = Dengage_Framework;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		AFDE56DED37F51FFD68F6A12B5074AF9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2FD5E6BDDC959EA706A74D463D1E464A /* Dengage.Framework.Extensions.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_ASSET_PATHS = Dengage.Framework;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Dengage.Framework.Extensions/Dengage.Framework.Extensions-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Dengage.Framework.Extensions/Dengage.Framework.Extensions-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Dengage.Framework.Extensions/Dengage.Framework.Extensions.modulemap";
+				PRODUCT_MODULE_NAME = Dengage_Framework_Extensions;
+				PRODUCT_NAME = Dengage_Framework_Extensions;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C70A0F63AC095CB8B2DABBDC976F6A18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A74D09D21AAED83BAA21ED05F07803A0 /* Pods-Dengage.Framework.Extensions_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Dengage.Framework.Extensions_Tests/Pods-Dengage.Framework.Extensions_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Dengage.Framework.Extensions_Tests/Pods-Dengage.Framework.Extensions_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D3AD4BF29354D2288C6F0C51DD98590F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9BAFA5D03248FCA9FFF7794E924F69FB /* Dengage.Framework.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = NO;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Dengage.Framework/Dengage.Framework-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Dengage.Framework/Dengage.Framework-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Dengage.Framework/Dengage.Framework.modulemap";
+				PRODUCT_MODULE_NAME = Dengage_Framework;
+				PRODUCT_NAME = Dengage_Framework;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		DD8F832993327D1DD8046C3CBCBD97CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0AA44B79CB2360EF510D15A8265CAAEF /* Build configuration list for PBXNativeTarget "Pods-Dengage.Framework.Extensions_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4E30767D13BF3608DF49D859A48AC1C5 /* Debug */,
+				C70A0F63AC095CB8B2DABBDC976F6A18 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD8F832993327D1DD8046C3CBCBD97CD /* Debug */,
+				257497152829C177993B5EC99C1D227A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7F1FD67B1A4AD3150ECA1EA8DA69F75A /* Build configuration list for PBXNativeTarget "Dengage.Framework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3AD4BF29354D2288C6F0C51DD98590F /* Debug */,
+				AD7429BF812898BE5900190D5F7E4F12 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8FD276AFD39D9E620389152C5A4F8A11 /* Build configuration list for PBXNativeTarget "Dengage.Framework.Extensions" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5C0105CFC3FCC358E0B9A5B5B9966A58 /* Debug */,
+				AFDE56DED37F51FFD68F6A12B5074AF9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

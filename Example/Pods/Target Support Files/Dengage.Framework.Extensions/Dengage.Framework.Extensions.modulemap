@@ -1,0 +1,6 @@
+framework module Dengage_Framework_Extensions {
+  umbrella header "Dengage.Framework.Extensions-umbrella.h"
+
+  export *
+  module * { export * }
+}

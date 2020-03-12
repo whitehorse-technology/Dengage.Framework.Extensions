@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'Dengage.Framework.Extensions'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of Dengage.Framework.Extensions.'
+  s.version          = '1.0.0'
+  s.summary          = 'Dengage.Framework.Extensions contains custom categories (Carousel Notification)'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,19 +18,21 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+Dengage.Framework.Extensions provides necessary classes and functions which handles notification for Rich Notifications
                        DESC
 
   s.homepage         = 'https://github.com/ekin@whitehorse.technology/Dengage.Framework.Extensions'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
-  s.license          = { :type => 'MIT', :file => 'LICENSE' }
+  s.license          = { :type => 'GNU GPLv3', :file => 'LICENSE' }
   s.author           = { 'ekin@whitehorse.technology' => 'ekin@whitehorse.technology' }
   s.source           = { :git => 'https://github.com/ekin@whitehorse.technology/Dengage.Framework.Extensions.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '11.0'
 
   s.source_files = 'Dengage.Framework.Extensions/Classes/**/*'
+  
+  s.swift_versions = ['4.0','4.2','5.0']
   
   # s.resource_bundles = {
   #   'Dengage.Framework.Extensions' => ['Dengage.Framework.Extensions/Assets/*.png']
@@ -38,5 +40,6 @@ TODO: Add long description of the pod here.
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+
+  s.dependency 'Dengage.Framework'
 end

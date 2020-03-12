@@ -1,0 +1,23 @@
+PODS:
+  - Dengage.Framework (2.2.5)
+  - Dengage.Framework.Extensions (0.1.0)
+
+DEPENDENCIES:
+  - Dengage.Framework
+  - Dengage.Framework.Extensions (from `../`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Dengage.Framework
+
+EXTERNAL SOURCES:
+  Dengage.Framework.Extensions:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Dengage.Framework: ae33e76dd3032f1f798f6670a9d6a3fe13ebcdae
+  Dengage.Framework.Extensions: c4531e9991d93d915da2753dbdd1bcff6906e79b
+
+PODFILE CHECKSUM: ca75eec81e2e8c7acfe92b98682b2b272727da39
+
+COCOAPODS: 1.7.5
