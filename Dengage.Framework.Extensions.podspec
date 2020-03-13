@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'Dengage.Framework.Extensions'
-  s.version          = '1.0.0'
+  s.version          = '1.0-alpha'
   s.summary          = 'Dengage.Framework.Extensions contains custom categories (Carousel Notification)'
 
 # This description is used to generate tags and improve search results.
@@ -21,12 +21,12 @@ Pod::Spec.new do |s|
 Dengage.Framework.Extensions provides necessary classes and functions which handles notification for Rich Notifications
                        DESC
 
-  s.homepage         = 'https://github.com/ekin@whitehorse.technology/Dengage.Framework.Extensions'
+  s.homepage         = 'https://github.com/whitehorse-technology/Dengage.Framework.Extensions'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'GNU GPLv3', :file => 'LICENSE' }
   s.author           = { 'ekin@whitehorse.technology' => 'ekin@whitehorse.technology' }
-  s.source           = { :git => 'https://github.com/ekin@whitehorse.technology/Dengage.Framework.Extensions.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.source           = { :git => 'https://github.com/whitehorse-technology/Dengage.Framework.Extensions.git', :tag => s.version.to_s }
+  
 
   s.ios.deployment_target = '11.0'
 
