@@ -15,7 +15,7 @@ import os.log
 
 open class DengageNotificationViewController: UIViewController, UNNotificationContentExtension {
     
-    @IBOutlet weak var collectionView: UICollectionView!
+    var dengageCollectionView: UICollectionView!
     
     var bestAttemptContent: UNMutableNotificationContent?
     
@@ -28,10 +28,17 @@ open class DengageNotificationViewController: UIViewController, UNNotificationCo
         super.viewDidLoad()
         // Do any required interface initialization here.
         print("viewDidLoad")
-        self.collectionView.delegate = self as UICollectionViewDelegate
-        self.collectionView.dataSource = self as UICollectionViewDataSource
-        self.collectionView.contentInset = UIEdgeInsets(top: 10.0, left: 10.0, bottom: 10.0, right: 10.0)
         
+        
+    }
+    
+    open func viewDidLoad(_ collectionView : UICollectionView!){
+        super.viewDidLoad()
+        
+        self.dengageCollectionView = collectionView
+        self.dengageCollectionView.delegate = self as UICollectionViewDelegate
+        self.dengageCollectionView.dataSource = self as UICollectionViewDataSource
+        self.dengageCollectionView.contentInset = UIEdgeInsets(top: 10.0, left: 10.0, bottom: 10.0, right: 10.0)
     }
     
     override open func viewWillAppear(_ animated: Bool) {
@@ -44,7 +51,7 @@ open class DengageNotificationViewController: UIViewController, UNNotificationCo
         print("viewDidAppear")
     }
  
-    public func didReceive(_ notification: UNNotification) {
+    open func didReceive(_ notification: UNNotification) {
         
         self.bestAttemptContent = (notification.request.content.mutableCopy() as? UNMutableNotificationContent)
         
@@ -66,7 +73,7 @@ open class DengageNotificationViewController: UIViewController, UNNotificationCo
                 }
 
                 DispatchQueue.main.async {
-                    self.collectionView.reloadData()
+                    self.dengageCollectionView.reloadData()
                 }
                 
             } else {
@@ -75,7 +82,7 @@ open class DengageNotificationViewController: UIViewController, UNNotificationCo
         }
     }
     
-    public func didReceive(_ response: UNNotificationResponse, completionHandler completion: @escaping (UNNotificationContentExtensionResponseOption) -> Void) {
+    open func didReceive(_ response: UNNotificationResponse, completionHandler completion: @escaping (UNNotificationContentExtensionResponseOption) -> Void) {
         if response.actionIdentifier == "NEXT_ACTION" {
             self.scrollNextItem()
             completion(UNNotificationContentExtensionResponseOption.doNotDismiss)
@@ -91,17 +98,17 @@ open class DengageNotificationViewController: UIViewController, UNNotificationCo
     private func scrollNextItem(){
         self.currentIndex == (self.carouselImages.count - 1) ? (self.currentIndex = 0) : ( self.currentIndex += 1 )
         let indexPath = IndexPath(row: self.currentIndex, section: 0)
-        self.collectionView.contentInset.right = (indexPath.row == 0 || indexPath.row == self.carouselImages.count - 1) ? 10.0 : 20.0
-        self.collectionView.contentInset.left = (indexPath.row == 0 || indexPath.row == self.carouselImages.count - 1) ? 10.0 : 20.0
-        self.collectionView.scrollToItem(at: indexPath, at: UICollectionView.ScrollPosition.right, animated: true)
+        self.dengageCollectionView.contentInset.right = (indexPath.row == 0 || indexPath.row == self.carouselImages.count - 1) ? 10.0 : 20.0
+        self.dengageCollectionView.contentInset.left = (indexPath.row == 0 || indexPath.row == self.carouselImages.count - 1) ? 10.0 : 20.0
+        self.dengageCollectionView.scrollToItem(at: indexPath, at: UICollectionView.ScrollPosition.right, animated: true)
     }
     
     private func scrollPreviousItem(){
         self.currentIndex == 0 ? (self.currentIndex = self.carouselImages.count - 1) : ( self.currentIndex -= 1 )
         let indexPath = IndexPath(row: self.currentIndex, section: 0)
-        self.collectionView.contentInset.right = (indexPath.row == 0 || indexPath.row == self.carouselImages.count - 1) ? 10.0 : 20.0
-        self.collectionView.contentInset.left = (indexPath.row == 0 || indexPath.row == self.carouselImages.count - 1) ? 10.0 : 20.0
-        self.collectionView.scrollToItem(at: indexPath, at: UICollectionView.ScrollPosition.left, animated: true)
+        self.dengageCollectionView.contentInset.right = (indexPath.row == 0 || indexPath.row == self.carouselImages.count - 1) ? 10.0 : 20.0
+        self.dengageCollectionView.contentInset.left = (indexPath.row == 0 || indexPath.row == self.carouselImages.count - 1) ? 10.0 : 20.0
+        self.dengageCollectionView.scrollToItem(at: indexPath, at: UICollectionView.ScrollPosition.left, animated: true)
     }
     
 }
@@ -132,7 +139,7 @@ extension DengageNotificationViewController : UICollectionViewDelegate, UICollec
     public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         let identifier = "CarouselNotificationCell"
-        self.collectionView.register(UINib(nibName: identifier, bundle: nil), forCellWithReuseIdentifier: identifier)
+        self.dengageCollectionView.register(UINib(nibName: identifier, bundle: nil), forCellWithReuseIdentifier: identifier)
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: identifier, for: indexPath) as! CarouselNotificationCell
         let payloads = self.payloads[indexPath.row]
         cell.configure(imagePath: payloads.image!, title: payloads.title!, desc: payloads.description!)
@@ -141,7 +148,7 @@ extension DengageNotificationViewController : UICollectionViewDelegate, UICollec
     }
     
     public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let width = self.collectionView.frame.width
+        let width = self.dengageCollectionView.frame.width
         let cellWidth = (indexPath.row == 0 || indexPath.row == self.carouselImages.count - 1) ? (width - 30) : (width - 40)
         return CGSize(width: cellWidth, height: width - 20.0)
     }
