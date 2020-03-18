@@ -1,6 +1,6 @@
 use_frameworks!
 target 'Dengage.Framework.Extensions_Tests' do
   pod 'Dengage.Framework.Extensions', :path => '../'
-  pod 'Dengage.Framework'
+  
   
 end

@@ -9,7 +9,7 @@
 import UIKit
 import UserNotifications
 import UserNotificationsUI
-import Dengage_Framework
+
 
 
 open class DengageNotificationViewController: UIViewController, UNNotificationContentExtension {
