@@ -51,6 +51,7 @@
 		AA5DB427241A6E4B00B77C4B /* CarouselNotificationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA5DB426241A6E4B00B77C4B /* CarouselNotificationCell.xib */; };
 		AA5DB429241A6E6E00B77C4B /* CarouselNotificationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5DB428241A6E6E00B77C4B /* CarouselNotificationCell.swift */; };
 		AA5DB42C241A6F0100B77C4B /* DengageRecievedMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5DB42B241A6F0100B77C4B /* DengageRecievedMessage.swift */; };
+		AAAF0237242236160076336D /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAAF0236242236160076336D /* MainInterface.storyboard */; };
 		AB3DDDF3E3491896462CB06A0372D48F /* TransactionalOpenEventSevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311B2F55FA7AB8BE60211C6AD96B1AA3 /* TransactionalOpenEventSevice.swift */; };
 		AD51CBEBED69F45DAF80CE3FF2A0A948 /* Dengage.Framework-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B09A665D62F2F72E02D31A7BB7D8362 /* Dengage.Framework-dummy.m */; };
 		B23825817536819F76A0DF82973E434A /* DengageNotificationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B99D96727F6CF0E74E07F918080720C /* DengageNotificationExtension.swift */; };
@@ -149,6 +150,7 @@
 		AA5DB426241A6E4B00B77C4B /* CarouselNotificationCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = CarouselNotificationCell.xib; path = Dengage.Framework.Extensions/Views/CarouselNotificationCell.xib; sourceTree = "<group>"; };
 		AA5DB428241A6E6E00B77C4B /* CarouselNotificationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CarouselNotificationCell.swift; path = Dengage.Framework.Extensions/Classes/CarouselNotificationCell.swift; sourceTree = "<group>"; };
 		AA5DB42B241A6F0100B77C4B /* DengageRecievedMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DengageRecievedMessage.swift; path = Dengage.Framework.Extensions/Classes/Models/DengageRecievedMessage.swift; sourceTree = "<group>"; };
+		AAAF0236242236160076336D /* MainInterface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = MainInterface.storyboard; path = Dengage.Framework.Extensions/MainInterface.storyboard; sourceTree = "<group>"; };
 		AEED591C88505AB58D16BDF5672E09A0 /* Dengage.Framework.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Dengage.Framework.modulemap; sourceTree = "<group>"; };
 		B093F3C25DFC45F28291C51CD1638C36 /* Dengage.Framework.Extensions.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Dengage.Framework.Extensions.modulemap; sourceTree = "<group>"; };
 		B9C4734C2FD32B8AA114C2C97AE1D2F1 /* Dengage.Framework-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Dengage.Framework-umbrella.h"; sourceTree = "<group>"; };
@@ -350,6 +352,7 @@
 				AA5DB424241A6E0600B77C4B /* DengageNotificationViewController.swift */,
 				AA5DB426241A6E4B00B77C4B /* CarouselNotificationCell.xib */,
 				AA5DB428241A6E6E00B77C4B /* CarouselNotificationCell.swift */,
+				AAAF0236242236160076336D /* MainInterface.storyboard */,
 			);
 			name = Dengage.Framework.Extensions;
 			path = ../..;
@@ -493,6 +496,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA5DB40E241A6D1B00B77C4B /* BaseService.swift in Resources */,
+				AAAF0237242236160076336D /* MainInterface.storyboard in Resources */,
 				AA5DB40F241A6D1B00B77C4B /* Constants.swift in Resources */,
 				AA5DB410241A6D1B00B77C4B /* DefaultCategory.swift in Resources */,
 				AA5DB411241A6D1B00B77C4B /* Dengage.swift in Resources */,

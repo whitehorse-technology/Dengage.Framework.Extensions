@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'Dengage.Framework.Extensions'
-  s.version          = '1.0-alpha'
+  s.version          = '1.0.1-alpha'
   s.summary          = 'Dengage.Framework.Extensions contains custom categories (Carousel Notification)'
 
 # This description is used to generate tags and improve search results.
@@ -34,9 +34,9 @@ Dengage.Framework.Extensions provides necessary classes and functions which hand
   
   s.swift_versions = ['4.0','4.2','5.0']
   
-  # s.resource_bundles = {
-  #   'Dengage.Framework.Extensions' => ['Dengage.Framework.Extensions/Assets/*.png']
-  # }
+  s.resource_bundles = {
+     'Dengage.Framework.Extensions' => ['Dengage.Framework.Extensions/Views/*', 'Dengage.Framework.Extensions/*.storyboard']
+  }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'

@@ -10,12 +10,11 @@ import UIKit
 import UserNotifications
 import UserNotificationsUI
 import Dengage_Framework
-import os.log
 
 
 open class DengageNotificationViewController: UIViewController, UNNotificationContentExtension {
     
-    var dengageCollectionView: UICollectionView!
+    @IBOutlet weak var dengageCollectionView: UICollectionView!
     
     var bestAttemptContent: UNMutableNotificationContent?
     
@@ -43,12 +42,12 @@ open class DengageNotificationViewController: UIViewController, UNNotificationCo
     
     override open func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        print("viewWillAppear")
+        
     }
     
     override open func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        print("viewDidAppear")
+        
     }
  
     open func didReceive(_ notification: UNNotification) {
