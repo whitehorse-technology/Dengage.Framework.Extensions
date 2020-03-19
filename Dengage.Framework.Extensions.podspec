@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'Dengage.Framework.Extensions'
-  s.version          = '1.0.3-alpha'
+  s.version          = '1.0.4-alpha'
   s.summary          = 'Dengage.Framework.Extensions contains custom categories (Carousel Notification)'
 
 # This description is used to generate tags and improve search results.

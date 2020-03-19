@@ -18,7 +18,6 @@ open class DengageNotificationViewController: UIViewController, UNNotificationCo
     
     var bestAttemptContent: UNMutableNotificationContent?
     
-    var carouselImages : [String] = [String]()
     var currentIndex : Int = 0
     
     var payloads : [DengageRecievedMessage] = [DengageRecievedMessage]()
@@ -55,28 +54,26 @@ open class DengageNotificationViewController: UIViewController, UNNotificationCo
         self.bestAttemptContent = (notification.request.content.mutableCopy() as? UNMutableNotificationContent)
         
         if let bestAttemptContent =  bestAttemptContent {
-            if let carouselStr = bestAttemptContent.userInfo["urlImageString"] as? String {
+            
+            if let carouselContents = bestAttemptContent.userInfo["carouselContent"] as? [AnyObject] {
                 
-                
-                _ = carouselStr.components(separatedBy: ",")
-                self.carouselImages = ["https://i0.wp.com/ekinbulut.com/wp-content/uploads/2020/02/Route_Budapest_To_Dresden.png","https://i2.wp.com/ekinbulut.com/wp-content/uploads/2020/01/20200103_094849-scaled.jpg","https://i1.wp.com/ekinbulut.com/wp-content/uploads/2019/11/tree_reflection_water_night_106375_1024x768.jpg"]
-                
-                
-                for image in self.carouselImages
+                for carouselContent in carouselContents
                 {
-                    let dengagePayload1 = DengageRecievedMessage()
-                    dengagePayload1.image = image
-                    dengagePayload1.title = "test"
-                    dengagePayload1.description = "desc"
-                    self.payloads.append(dengagePayload1)
-                }
+                    if let contentDictionary = carouselContent as? NSDictionary {
+                        let dengagePayload = DengageRecievedMessage()
+                        
+                        dengagePayload.image = contentDictionary["mediaUrl"] as? String
+                        dengagePayload.title = contentDictionary["title"] as? String
+                        dengagePayload.description = contentDictionary["desc"] as? String
+                        self.payloads.append(dengagePayload)
+                        
+                    }
 
+                }
+                
                 DispatchQueue.main.async {
                     self.dengageCollectionView.reloadData()
                 }
-                
-            } else {
-                //handle non localytics rich push
             }
         }
     }
@@ -95,18 +92,18 @@ open class DengageNotificationViewController: UIViewController, UNNotificationCo
     
     //current index'i belirleyip ilgili item'a scroll ettiriyoruz. Sağdan soldan eşit bölünmesi içinde sağ ve sol content inset'lerle oynuyoruz.
     private func scrollNextItem(){
-        self.currentIndex == (self.carouselImages.count - 1) ? (self.currentIndex = 0) : ( self.currentIndex += 1 )
+        self.currentIndex == (self.payloads.count - 1) ? (self.currentIndex = 0) : ( self.currentIndex += 1 )
         let indexPath = IndexPath(row: self.currentIndex, section: 0)
-        self.dengageCollectionView.contentInset.right = (indexPath.row == 0 || indexPath.row == self.carouselImages.count - 1) ? 10.0 : 20.0
-        self.dengageCollectionView.contentInset.left = (indexPath.row == 0 || indexPath.row == self.carouselImages.count - 1) ? 10.0 : 20.0
+        self.dengageCollectionView.contentInset.right = (indexPath.row == 0 || indexPath.row == self.payloads.count - 1) ? 10.0 : 20.0
+        self.dengageCollectionView.contentInset.left = (indexPath.row == 0 || indexPath.row == self.payloads.count - 1) ? 10.0 : 20.0
         self.dengageCollectionView.scrollToItem(at: indexPath, at: UICollectionView.ScrollPosition.right, animated: true)
     }
     
     private func scrollPreviousItem(){
-        self.currentIndex == 0 ? (self.currentIndex = self.carouselImages.count - 1) : ( self.currentIndex -= 1 )
+        self.currentIndex == 0 ? (self.currentIndex = self.payloads.count - 1) : ( self.currentIndex -= 1 )
         let indexPath = IndexPath(row: self.currentIndex, section: 0)
-        self.dengageCollectionView.contentInset.right = (indexPath.row == 0 || indexPath.row == self.carouselImages.count - 1) ? 10.0 : 20.0
-        self.dengageCollectionView.contentInset.left = (indexPath.row == 0 || indexPath.row == self.carouselImages.count - 1) ? 10.0 : 20.0
+        self.dengageCollectionView.contentInset.right = (indexPath.row == 0 || indexPath.row == self.payloads.count - 1) ? 10.0 : 20.0
+        self.dengageCollectionView.contentInset.left = (indexPath.row == 0 || indexPath.row == self.payloads.count - 1) ? 10.0 : 20.0
         self.dengageCollectionView.scrollToItem(at: indexPath, at: UICollectionView.ScrollPosition.left, animated: true)
     }
     
@@ -148,8 +145,9 @@ extension DengageNotificationViewController : UICollectionViewDelegate, UICollec
     
     public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let width = self.dengageCollectionView.frame.width
-        let cellWidth = (indexPath.row == 0 || indexPath.row == self.carouselImages.count - 1) ? (width - 30) : (width - 40)
+        let cellWidth = (indexPath.row == 0 || indexPath.row == self.payloads.count - 1) ? (width - 30) : (width - 40)
         return CGSize(width: cellWidth, height: width - 20.0)
     }
     
 }
+
