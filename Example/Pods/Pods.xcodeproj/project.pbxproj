@@ -512,7 +512,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MARKETING_VERSION = 1.0.4;
+				MARKETING_VERSION = 1.0.7;
 				MODULEMAP_FILE = "Target Support Files/Dengage.Framework.Extensions/Dengage.Framework.Extensions.modulemap";
 				PRODUCT_MODULE_NAME = Dengage_Framework_Extensions;
 				PRODUCT_NAME = Dengage_Framework_Extensions;
@@ -535,6 +535,7 @@
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Dengage.Framework.Extensions";
 				INFOPLIST_FILE = "Target Support Files/Dengage.Framework.Extensions/ResourceBundle-Dengage.Framework.Extensions-Dengage.Framework.Extensions-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MARKETING_VERSION = 1.0.7;
 				PRODUCT_NAME = Dengage.Framework.Extensions;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -657,7 +658,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MARKETING_VERSION = 1.0.4;
+				MARKETING_VERSION = 1.0.7;
 				MODULEMAP_FILE = "Target Support Files/Dengage.Framework.Extensions/Dengage.Framework.Extensions.modulemap";
 				PRODUCT_MODULE_NAME = Dengage_Framework_Extensions;
 				PRODUCT_NAME = Dengage_Framework_Extensions;
@@ -779,6 +780,7 @@
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Dengage.Framework.Extensions";
 				INFOPLIST_FILE = "Target Support Files/Dengage.Framework.Extensions/ResourceBundle-Dengage.Framework.Extensions-Dengage.Framework.Extensions-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MARKETING_VERSION = 1.0.7;
 				PRODUCT_NAME = Dengage.Framework.Extensions;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;

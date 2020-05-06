@@ -16,6 +16,7 @@ open class CarouselNotificationCell: UICollectionViewCell {
     
     @IBOutlet weak var desc : UILabel!
     
+    @IBOutlet weak var viewContainer: UIView!
     func configure(imagePath : String) {
         self.setImage(imagePath: imagePath)
     }
@@ -24,6 +25,8 @@ open class CarouselNotificationCell: UICollectionViewCell {
         self.setImage(imagePath: imagePath)
         self.title.text = title
         self.desc.text = desc
+        
+        setColors()
         
     }
     
@@ -42,6 +45,28 @@ open class CarouselNotificationCell: UICollectionViewCell {
             }
         })
         task.resume()
+    }
+    
+    private func setColors(){
+        
+        if #available(iOS 13.0, *) {
+            if self.traitCollection.userInterfaceStyle == .dark {
+                self.title.textColor = UIColor.white
+                self.desc.textColor = UIColor.white
+                self.viewContainer.backgroundColor = UIColor.black
+                self.backgroundColor = UIColor.black
+                
+            } else {
+                self.title.textColor = UIColor.black
+                self.desc.textColor = UIColor.black
+                self.viewContainer.backgroundColor = UIColor.white
+                self.backgroundColor = UIColor.white
+            }
+        } else {
+            self.title.textColor = UIColor.black
+            self.desc.textColor = UIColor.black
+            self.viewContainer.backgroundColor = UIColor.white
+        }
     }
 
     

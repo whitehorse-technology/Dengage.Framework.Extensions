@@ -10,7 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CarouselNotificationCell" customModule="carouselViewController" customModuleProvider="target">
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CarouselNotificationCell" customModule="Dengage_Framework_Extensions" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -54,6 +54,7 @@
                 <outlet property="desc" destination="2I4-5K-iiz" id="0FY-gv-YWI"/>
                 <outlet property="imageView" destination="tex-o0-GtD" id="MPk-5n-QdI"/>
                 <outlet property="title" destination="B3J-dP-FUZ" id="HQN-82-Ci4"/>
+                <outlet property="viewContainer" destination="rFR-yw-ntG" id="Dlf-V3-L0t"/>
             </connections>
             <point key="canvasLocation" x="137.59999999999999" y="153.82308845577214"/>
         </collectionViewCell>
