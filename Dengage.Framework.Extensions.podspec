@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'Dengage.Framework.Extensions'
-  s.version          = '1.0.8'
+  s.version          = '1.0.9'
   s.summary          = 'Dengage.Framework.Extensions contains custom categories (Carousel Notification)'
 
 # This description is used to generate tags and improve search results.
@@ -41,5 +41,5 @@ Dengage.Framework.Extensions provides necessary classes and functions which hand
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
 
-  s.dependency 'Dengage.Framework'
+  #s.dependency 'Dengage.Framework'
 end
