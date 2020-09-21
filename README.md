@@ -5,7 +5,7 @@ This repo makes it easy to integrate your native IOS app with dEngage. It provid
 
 ## Requirements
 
-Supports IOS 11 or higher.
+Supports iOS 10 or higher.
 
 ## Installation
 
@@ -13,7 +13,7 @@ Dengage.Framework.Extensions is available through [CocoaPods](https://cocoapods.
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'Dengage.Framework.Extensions','1.0.9'
+pod 'Dengage.Framework.Extensions','1.0.10'
 ```
 
 Visit [dEngage's IOS SDK Setup Guide](https://docs.dengage.com/push-sdk/ios) page in order to view documentation.
