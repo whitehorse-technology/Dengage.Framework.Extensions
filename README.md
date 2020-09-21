@@ -13,7 +13,7 @@ Dengage.Framework.Extensions is available through [CocoaPods](https://cocoapods.
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'Dengage.Framework.Extensions'
+pod 'Dengage.Framework.Extensions','1.0.9'
 ```
 
 Visit [dEngage's IOS SDK Setup Guide](https://docs.dengage.com/push-sdk/ios) page in order to view documentation.
