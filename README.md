@@ -18,10 +18,6 @@ pod 'Dengage.Framework.Extensions','1.0.10'
 
 Visit [dEngage's IOS SDK Setup Guide](https://docs.dengage.com/push-sdk/ios) page in order to view documentation.
 
-## Author
-
-ekin@whitehorse.technology
-
 ## License
 
 Dengage.Framework.Extensions is available under the MIT license. See the LICENSE file for more info.
